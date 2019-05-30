@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ItemComponent } from './item/item.component';
+import { TaskComponent } from './task/task.component';
 
 @NgModule({
-  declarations: [ItemComponent],
+  declarations: [TaskComponent],
   imports: [
     CommonModule
   ]
 })
-export class ItemsModule { }
+export class TaskModule { }
