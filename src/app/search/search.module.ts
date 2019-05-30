@@ -6,6 +6,7 @@ import { SearchComponent } from './search/search.component';
   declarations: [SearchComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  exports:[SearchComponent]
 })
 export class SearchModule { }

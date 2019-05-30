@@ -3,19 +3,23 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {SharedModule} from './shared/shared.module'
-import { ItemsModule } from './items/items.module';
+import {SharedModule} from './shared/shared.module';
+import { TaskModule } from './task/task.module';
+import { SearchModule } from './search/search.module';
+import { CalculadoraComponent } from './calculadora/calculadora.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CalculadoraComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     SharedModule,
-    ItemsModule
+    TaskModule,
+    SearchModule
   ],
   providers: [],
   bootstrap: [AppComponent]
