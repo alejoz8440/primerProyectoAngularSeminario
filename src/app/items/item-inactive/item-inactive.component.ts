@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Item } from 'src/app/shared/model/items.model';
+import { ItemsService } from 'src/app/shared/model/services/items.service';
 
 @Component({
   selector: 'app-item-inactive',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ItemInactiveComponent implements OnInit {
 
-  constructor() { }
+  item:Item;
+  itemListInactive:Array<Item>;
+
+  constructor(private itemService: ItemsService) {
+    this.item = new Item();
+  }
 
   ngOnInit() {
+    this.itemListInactive= this.itemService.getAllItemsInactive();
+  }
+
+  agregarItemInactivo(){
+    this.itemService.addItemInactive(this.item);
+    this.item = new Item();
+    
   }
 
   listaInicialInactiva=[

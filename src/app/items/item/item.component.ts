@@ -8,7 +8,6 @@ import { ItemsService } from 'src/app/shared/model/services/items.service';
   styleUrls: ['./item.component.scss']
 })
 export class ItemComponent implements OnInit {
-
   item:Item;
   itemList:Array<Item>;
 
@@ -20,9 +19,12 @@ export class ItemComponent implements OnInit {
     this.itemList= this.itemService.getAllItems();
   }
 
+  
+
   agregarItem(){
     this.itemService.addItem(this.item);
     this.item = new Item();
+    
   }
 
   listaInicialActiva=[
