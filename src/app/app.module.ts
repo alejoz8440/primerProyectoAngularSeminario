@@ -7,6 +7,7 @@ import {SharedModule} from './shared/shared.module';
 import { TaskModule } from './task/task.module';
 import { SearchModule } from './search/search.module';
 import { CalculadoraComponent } from './calculadora/calculadora.component';
+import { PostModule } from './post/post.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CalculadoraComponent } from './calculadora/calculadora.component';
     FormsModule,
     SharedModule,
     TaskModule,
-    SearchModule
+    SearchModule,
+    PostModule
   ],
   providers: [],
   bootstrap: [AppComponent]
