@@ -8,6 +8,8 @@ import { TaskModule } from './task/task.module';
 import { SearchModule } from './search/search.module';
 import { CalculadoraComponent } from './calculadora/calculadora.component';
 import { PostModule } from './post/post.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MaterialModule} from './material.module'
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { PostModule } from './post/post.module';
     SharedModule,
     TaskModule,
     SearchModule,
-    PostModule
+    PostModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

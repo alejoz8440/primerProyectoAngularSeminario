@@ -1,5 +1,6 @@
+
 <input type="text" [(ngModel)]="item.descripcion" >
-<button (click) = "agregarItem()">Añadir Item Activo</button>
+<button mat-stroked-button color="primary" (click) = "agregarItem()">Añadir Item Activo</button>
 <ol>
   <li *ngFor="let lista of listaInicialActiva">
       <input type="checkbox" checked="">
@@ -10,3 +11,4 @@
       <label>{{item.descripcion}}</label> 
   </li>
 </ol>
+
