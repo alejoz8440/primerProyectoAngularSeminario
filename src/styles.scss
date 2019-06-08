@@ -1,5 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.container {
+  border: 1px solid black;
+  min-height: 99vh;
 
+  .header-label {
+    color: rgb(205, 177, 50);
+  }
+
+  .menu {
+
+
+    .menu-header {
+      border: 1px solid #2444aa;
+      background-color: #010c30;
+
+
+    }
+
+    .menu-content {
+      background-color: #002db3;
+    }
+  }
+
+  .content {
+    background-color: black;
+    color: bisque;
+
+    .content-uno {
+
+      .content-uno-header {
+        background-color: rgb(31, 61, 31);
+      }
+
+      .content-uno-content {
+        background-color: rgb(74, 177, 74);
+      }
+    }
+
+    .content-dos {
+
+      .content-dos-header {
+        background-color: rgb(43, 5, 43);
+      }
+
+      .content-dos-content {
+        background-color: rgb(187, 60, 187);
+      }
+    }
+  }
+
+  .right-barnner {
+    background-color: black;
+    color: white;
+  }
+}
+
+
+html,
+body {
+  height: 99%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
